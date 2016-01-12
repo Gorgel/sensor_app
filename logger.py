@@ -12,7 +12,7 @@ while True:
         current_time = time.strftime("%d/%m/%Y")
         current_date = time.strftime("%H:%M:%S")
 
-        with open('logged_data.txt', 'a') as the_file:
+        with open('/webapps/sensor_app/sensor_app/logged_data.txt', 'a') as the_file:
             the_file.write(current_date + " "
                            + current_time + " "
                            + str(temperature)

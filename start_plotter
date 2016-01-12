@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DJANGODIR=/webapps/sensor_app/sensor_app            # Django project directory
+DJANGO_SETTINGS_MODULE=sensor_app.settings             # which settings file should Django use
+
+echo "Starting $NAME as `whoami`"
+
+# Activate the virtual environment
+cd $DJANGODIR
+source ../bin/activate
+export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
+export PYTHONPATH=$DJANGODIR:$PYTHONPATH
+
+python plotter_script.py
