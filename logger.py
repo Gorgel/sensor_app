@@ -1,7 +1,7 @@
 import serial
 import time
 
-ser = serial.Serial('/dev/ttyACM0', 115200, timeout=5)
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 
 while True:
     read_data = ser.readlines()
