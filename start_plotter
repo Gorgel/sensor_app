@@ -1,3 +1,5 @@
+# this script is used to start the plotter script from within the virtual environment with right django settings
+
 #!/bin/bash
 
 DJANGODIR=/webapps/sensor_app/sensor_app            # Django project directory
